@@ -62,18 +62,15 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .card .content {
-  padding: 20px 25px;
+  padding: 25px 25px;
 }
 .card .middle h1 {
   color: var(--dark-blue);
   font-weight: 900;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
-@media (max-width: 767px) {
-  .card .middle h1 {
-    font-size: 24px;
-  }
-}
+
 .card .middle p {
   color: var(--desaturated-blue);
   line-height: 1.7;
@@ -81,7 +78,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .card .plan {
@@ -94,9 +91,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: var(--very-pale-blue);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-radius: 15px;
 }
 
