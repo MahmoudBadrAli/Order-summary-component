@@ -1,0 +1,205 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url("../Challenge/order-summary-component-main/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../Challenge/order-summary-component-main/images/pattern-background-mobile.svg");
+  }
+}
+
+.card {
+  width: 335px;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 15px 25px hsla(224, 23%, 55%, 0.15);
+  box-shadow: 0 15px 25px hsla(224, 23%, 55%, 0.15);
+}
+
+.card .top img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card .content {
+  padding: 20px 25px;
+}
+.card .middle h1 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .card .middle h1 {
+    font-size: 24px;
+  }
+}
+.card .middle p {
+  color: var(--desaturated-blue);
+  line-height: 1.7;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.card .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--very-pale-blue);
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.card .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card .left img {
+  margin-right: 15px;
+}
+
+.card .left .plan-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card .left .plan-name .annual {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card .left .plan-name .per-year {
+  color: var(--desaturated-blue);
+}
+
+.card .right a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  .card .right a {
+    font-size: 13px;
+  }
+}
+
+.card .right a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.card .bottom .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card .bottom .payment a {
+  text-decoration: none;
+}
+
+.card .bottom .payment .proceed {
+  background-color: var(--bright-blue);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .bottom .payment .proceed:hover {
+  opacity: 0.7;
+}
+
+.card .bottom .payment .cancel {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: 13px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .bottom .payment .cancel:hover {
+  color: var(--dark-blue);
+}
