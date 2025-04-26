@@ -47,7 +47,7 @@ body {
 }
 
 .card {
-  width: 335px;
+  width: 400px;
   max-width: 100%;
   background-color: white;
   border-radius: 20px;
@@ -55,7 +55,11 @@ body {
   -webkit-box-shadow: 0 15px 25px hsla(224, 23%, 55%, 0.15);
   box-shadow: 0 15px 25px hsla(224, 23%, 55%, 0.15);
 }
-
+@media (max-width: 767px) {
+  .card {
+    width: 335px;
+  }
+}
 .card .top img {
   width: 100%;
   max-width: 100%;
